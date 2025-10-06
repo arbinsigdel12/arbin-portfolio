@@ -1,0 +1,13 @@
+@use "../../styles/mixins" as *;
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  & > * {
+    margin-bottom: 0.8rem;
+  }
+  @include respond(md) {
+    grid-template-columns: 1fr;
+  }
+}

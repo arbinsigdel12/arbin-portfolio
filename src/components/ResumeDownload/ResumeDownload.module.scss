@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+
+.btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  color: $text;
+  font-weight: 600;
+  transition: transform 150ms ease;
+}
+.small {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+}
+.btn:active {
+  transform: translateY(1px);
+}

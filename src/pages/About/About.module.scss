@@ -1,0 +1,45 @@
+@use "../../styles/mixins" as *;
+@import "../../styles/variables.scss";
+
+.wrap {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  @include respond(md) {
+    flex-direction: column;
+  }
+  .left {
+    flex: 1;
+    h2 {
+      margin-top: 0;
+    }
+    .skills {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 0.4rem 0.6rem;
+        border-radius: 8px;
+      }
+    }
+  }
+  .right {
+    width: 260px;
+    .card {
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 12px;
+      padding: 1rem;
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .meta {
+        margin-top: 0.6rem;
+      }
+    }
+  }
+}

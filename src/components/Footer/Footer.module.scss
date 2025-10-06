@@ -1,0 +1,17 @@
+@use "../../styles/mixins" as *;
+@import "../../styles/variables.scss";
+
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  color: $muted;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(md) {
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+  }
+}

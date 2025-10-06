@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin respond($bp) {
+  @if $bp == md {
+    @media (max-width: #{$bp-md}px) {
+      @content;
+    }
+  } @else if $bp == sm {
+    @media (max-width: #{$bp-sm}px) {
+      @content;
+    }
+  }
+}
